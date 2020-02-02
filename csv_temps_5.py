@@ -66,7 +66,7 @@ for row in csv_file2:
         dates2.append(current_date)
 
 fig,(ax1,ax2)=plt.subplots(2,sharex=True)
-fig.suptitle('Temperature comparison between SITKA AIRPORT, AK US and DEATH VALLEY, CA US', fontsize=12)
+fig.suptitle('Temperature comparison between '+title1+' and '+title2, fontsize=12)
 ax1.plot(dates1,highs1,'tab:red',alpha=1)
 ax1.plot(dates1,lows1,'tab:blue',alpha=1)
 ax1.fill_between(dates1,highs1,lows1,facecolor='blue',alpha=0.1)
